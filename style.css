@@ -1,0 +1,64 @@
+ /* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+
+.tutto {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: rgba(42, 157, 143, .3);
+    position: fixed;
+}
+
+.header-back {
+    width: 100%;
+    height: 100px;
+    background: rgba(42, 157, 143, .3);
+    position: fixed;
+}
+
+.aside {
+    width: 20%;
+    height: 100vh;
+    background: rgba(38, 70, 83);
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background: rgba(233, 196, 106);
+    overflow: auto;
+}
+
+.random {
+    width: 100%;
+    height: 80px;
+    color: black;
+    border: 1px solid;
+}
+
+.contenitore {
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: rgba(244, 162, 97);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
