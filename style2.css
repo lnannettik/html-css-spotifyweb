@@ -1,0 +1,55 @@
+ /* RESET GENERALE */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+
+/* UTILITY */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.contenitore {
+    display: flex;
+}
+
+aside {
+    width: 230px;
+    height: calc(100vh - 50px);
+    background: rgba(38, 70, 83);
+    
+}
+
+main {
+    width: 100%;
+    /* height: 200px; */
+    background: rgba(233, 196, 106);
+}
+
+.top {
+    height: 50px;
+    background: rgba(42, 157, 143, .3);
+    /* position: fixed; */
+    text-align: right;
+    padding: 20px;
+    /* max-width: 100vw; */
+}
+
+.main-content {
+    width: 100%;
+    padding: 50px;
+}
+
+footer {
+    /* width: 100%; */
+    height: 50px;
+    background: rgba(244, 162, 97);
+    
+}

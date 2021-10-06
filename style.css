@@ -59,7 +59,7 @@
 /* ASIDE MENU' */
 
 .aside {
-    width: 20%;
+    width: 230px;
     height: calc(100vh - 70px);
     background: rgba(38, 70, 83);
     display: flex;
@@ -125,6 +125,7 @@
     padding: 20px;
     position: absolute;
     bottom: 0px;
+    background-color:rgba(38, 70, 83);
 }
 
 .installa a {
@@ -136,6 +137,7 @@
 }
 
 hr {
+    color: #6b6b6b;
     margin: 10px 0px;
 }
 
