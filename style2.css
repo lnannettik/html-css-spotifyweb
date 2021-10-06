@@ -12,44 +12,223 @@
 body {
     width: 100vw;
     height: 100vh;
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contenitore {
     display: flex;
 }
 
+
+/* ASIDE MENU' */
+
 aside {
     width: 230px;
     height: calc(100vh - 50px);
     background: rgba(38, 70, 83);
-    
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 }
+
+.logogrande {
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+}
+
+.logogrande img {
+    height: 31px;
+}
+
+.tasti {
+    padding: 0px 0px 20px 20px;
+}
+
+.tasto-menu {
+    width: 100%;
+}
+
+.tasto-menu a {
+    color: #6b6b6b;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.elenco-playlist {
+    padding: 10px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.elenco-playlist li {
+    color: #6b6b6b;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 0px;
+    list-style: none;
+}
+
+.titolo-menu {
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 20px;
+    display: block;
+}
+
+.crea-playlist {
+    color: #6b6b6b;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.bottom-pack {
+    width: 100%;
+    padding: 20px;
+    background-color:rgba(38, 70, 83);
+}
+
+.installa a {
+    color: #6b6b6b;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+hr {
+    color: #6b6b6b;
+    margin: 10px 0px;
+}
+
+.nome-utente {
+    display: flex;
+    align-items: center;
+}
+
+.img-finestra img {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.nome-utente span {
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+
+/* MAIN SECTION */
 
 main {
     width: 100%;
-    /* height: 200px; */
+    background: rgba(233, 196, 106);
+    padding-top: 70px;
+}
+
+
+/* BANDONE TOP OPACO E TASTO UPGRADE */
+
+.top {
+    height: 70px;
+    background: rgba(42, 157, 143, .3);
+    position: fixed;
+    text-align: right;
+    padding: 20px;
+    top: 0;
+    width: calc(100% - 230px);
+}
+
+.contenitore-tasto-upgrade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.upgrade {
+    border: 2px white solid;
+    padding: 8px 25px;
+    font-size: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* MAIN CONTENT */
+
+.main-section {
+    width: 100%;
     background: rgba(233, 196, 106);
 }
 
-.top {
-    height: 50px;
-    background: rgba(42, 157, 143, .3);
-    /* position: fixed; */
-    text-align: right;
-    padding: 20px;
-    /* max-width: 100vw; */
+
+/* NAVIGATION BAR */
+
+.nav-bar {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
-.main-content {
-    width: 100%;
-    padding: 50px;
+.nav-bar-items-list {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    padding: 5px;
 }
+
+.nav-bar-items-list li {
+    margin: 5px;
+    color: #6b6b6b;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* CARD SECTION */
+
+.card-section {
+    display: flex;
+}
+
+.card-list {
+    list-style: none;
+    display: flex;
+}
+
+
+.card {
+    width: calc(100% / 6);
+    height: 100px;
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
 
 footer {
     /* width: 100%; */
-    height: 50px;
+    height: 70px;
     background: rgba(244, 162, 97);
-    
+
 }
