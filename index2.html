@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous'/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet"> 
@@ -27,21 +28,21 @@
             <div class="tasti">
     
                 <div class="tasto-menu">
-                    <a href="#">img Home</a>
+                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
                 </div>
                 
                 <div class="tasto-menu">
-                    <a href="#">img Cerca</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
                 </div>
                 
                 <div class="tasto-menu">
-                    <a href="#">img Libreria</a>
+                    <a href="#"><i class="fa-solid fa-wine-bottle"></i> Libreria</a>
                 </div>
             </div>
     
             <span class="titolo-menu">PLAYLIST</span>
     
-            <span class="crea-playlist">img Crea Playlist</span>
+            <span class="crea-playlist"><i class="fa-solid fa-plus"></i> <span class="crea">Crea Playlist</span></span>
     
             <ul class="elenco-playlist">
                 <li>Nome Playlist</li>
@@ -110,7 +111,7 @@
 
                 <div class="card-section">
 
-                    <h1>Titolo</h1>
+                    <h2>Titolo</h2>
 
                     <ul class="card-list">
                         <li>
@@ -158,7 +159,7 @@
                     </ul>
 
 
-                    <h1>Titolo</h1>
+                    <h2>Titolo</h2>
 
                     <h4>subtitle</h4>
 
@@ -180,7 +181,7 @@
                     </ul>
 
 
-                    <h1>Titolo</h1>
+                    <h2>Titolo</h2>
 
                     <h4>subtitle</h4>
 
@@ -188,34 +189,83 @@
                     <ul class="card-list">
                         <li>
                             <div class="card">
-                                <img src="./img/metal_lifting.jpg" alt="Metal">
+                                <img class="round-img" src="./img/metal_lifting.jpg" alt="Metal">
                                 <h3>Titolino</h3>
                                 <h4>sub</h4> 
                             </div>
                         </li>
                         <li>
                             <div class="card">
-                                <img src="./img/metal_lifting.jpg" alt="Metal">
+                                <img class="round-img"src="./img/metal_lifting.jpg" alt="Metal">
                                 <h3>Titolino</h3>
                                 <h4>sub</h4> 
                             </div>
                         </li>
                     </ul>
-
-
 
                 </div>
 
-                
             </div>
 
         </main>
-
     </div>
 
+<!-- FOOTER -->
+
+    <footer>
+
+        <div class="blocco left">
+
+            <div class="interno-left">
+                <img src="./img/sinister.jpeg" alt="Album img">
+                <div class="titolo-e-sub">
+                    <span id="titolo">titolo</span>
+                    <span>sub</span>
+                </div>
+            </div>
+            
+            <div class="interno-right">
+                <span><i class="fa-regular fa-heart"></i></span>
+                <span><i class="fa-regular fa-folder"></i></span>
+            </div>
+
+        </div>
 
 
-    <footer>footer</footer>
+        <div class="blocco centrale">
+
+            <div class="sopra">
+                <span><i class="fa-solid fa-shuffle"></i></span>
+                <span><i class="fa-solid fa-backward-step"></i></span>
+                <span id="play"><i id="play" class="fa-regular fa-circle-play"></i></span>
+                <span><i class="fa-solid fa-forward-step"></i></span>
+                <span><i class="fa-solid fa-arrow-rotate-right"></i></span>
+            </div>
+
+            <div class="sotto">
+                <span>15:30</span>
+
+                <div class="container">
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>     
+                    </div>
+                </div>
+
+                <span>150:21</span>
+            </div>
+        </div>
+
+
+
+        <div class="blocco right">
+            <span><i class="white fa-solid fa-list-ul"></i></span>
+            <span><i class="white fa-solid fa-desktop"></i></span>
+            <span><i id="volume" class="white fa-solid fa-volume-high"></i></span>
+            <div class="barra-volume"></div>
+
+        </div>
+
+    </footer>
 
 
 </body>

@@ -27,7 +27,7 @@ body {
 aside {
     width: 230px;
     height: calc(100vh - 70px);
-    background: rgba(38, 70, 83);
+    background: #000000;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,12 @@ aside {
 
 .tasto-menu {
     width: 100%;
+    margin: 5px 0px;
+}
+
+.tasti .tasto-menu i {
+    font-size: 15px;
+    margin-right: 5px;
 }
 
 .tasto-menu a {
@@ -72,6 +78,7 @@ aside {
     font-weight: 600;
     padding: 5px 0px;
     list-style: none;
+    margin-bottom: 5px;
 }
 
 .titolo-menu {
@@ -89,10 +96,22 @@ aside {
     padding: 5px 20px;
 }
 
+.crea-playlist i {
+    color: black;
+    padding: 5px;
+    background-color: #6b6b6b;
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.crea {
+    font-size: 11px;
+}
+
+
 .bottom-pack {
     width: 100%;
     padding: 20px;
-    background-color:rgba(38, 70, 83);
 }
 
 .installa a {
@@ -130,7 +149,7 @@ hr {
 
 main {
     width: calc(100% - 230px);
-    background: rgba(233, 196, 106);
+    background: rgb(20, 25, 34);
     padding-top: 70px;
     overflow-y: auto;
     height: 100%;
@@ -142,7 +161,7 @@ main {
 
 .top {
     height: 70px;
-    background: rgba(42, 157, 143, .3);
+    background: rgba(8, 11, 18, .5);
     position: fixed;
     text-align: right;
     padding: 20px;
@@ -208,26 +227,14 @@ main {
     padding: 20px;
 }
 
-/* .card-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.card-list {
-    list-style: none;
-    display: flex;
-} */
-
 .card-list {
     margin: 20px 0px;
 }
 
 .card-list li {
     width: calc(100% / 6 - 15px);
-    margin: 8px;
+    margin: 8px 15px 8px 0px;
     list-style: none;
-
 }
 
 .card {
@@ -237,6 +244,11 @@ main {
     text-align: center;
 }
 
+
+.card-section h2 {
+    color: white;
+}
+
 .card h3 {
     font-size: 12px;
     color: white;
@@ -244,10 +256,15 @@ main {
 
 .card-section h4 {
     font-size: 10px;
+    margin: 10px 0px;
 }
 
 .card-list {
     display: flex;
+}
+
+.round-img {
+    border-radius: 50%;
 }
 
 
@@ -256,7 +273,105 @@ main {
 footer {
     /* width: 100%; */
     height: 70px;
-    background: rgba(244, 162, 97);
+    background: #282828;
     display: flex;
     flex-shrink: 0;
+    justify-content: space-between;
 }
+
+.left,.right {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+.left,.right, span {
+    color: #6b6b6b;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.titolo-e-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.interno-left,.interno-right {
+    display: flex;
+    align-items: center;
+}
+
+#titolo {
+    color: white;
+}
+
+.blocco.centrale {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .blocco i {
+    margin: 10px;
+    font-size: 12px;
+}
+
+footer .centrale.blocco i {
+    margin: 15px 10px 0px 10px;
+    font-size: 12px;
+    color: white;
+
+}
+
+.blocco.centrale #play {
+    font-size: 20px;
+}
+
+.container {
+    display: inline-block;
+}
+
+#progressBar {
+    width: 300px;
+    height: 2.5px;
+    background-color: #6b6b6b;
+    margin: 0px 20px;
+    border-radius: 10%;
+}
+
+.sotto {
+    margin-bottom: 15px;
+}
+
+.sotto span {
+    color: white;
+    font-size: 7px;
+    font-weight: 600;
+}
+
+.white {
+    color: white;
+}
+
+.barra-volume {
+    height: 2.5px;
+    width: 80px;
+    background-color: #6b6b6b;
+    margin: 0px 10px 0px 0px;
+}
+
+#volume {
+    margin-right: 0px;
+}
+
+/* MEDIA QUERY */
+
