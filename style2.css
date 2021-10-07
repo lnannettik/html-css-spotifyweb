@@ -44,12 +44,17 @@ aside {
 }
 
 .tasti {
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 20px 0px;
 }
 
 .tasto-menu {
     width: 100%;
-    margin: 5px 0px;
+    margin: 5px 0px 5px 0px;
+    padding-left: 20px;
+}
+
+.tasto-menu:hover {
+    border-left: 3px #adff2f solid;
 }
 
 .tasti .tasto-menu i {
@@ -220,6 +225,22 @@ main {
     font-weight: 600;
 }
 
+.evidenza {
+    font-size: 10px;
+}
+
+
+.nav-bar-items-list hr {
+    margin: 6px 20px -8px 20px;
+    height: 2px;
+    color: #adff2f;
+    display: none;
+}
+
+.nav-bar-items-list li:hover hr {
+    display: block;
+}
+
 
 /* CARD SECTION */
 
@@ -244,6 +265,10 @@ main {
     text-align: center;
 }
 
+.ombra {
+    background-color: rgba(0, 0, 0, .4);
+    
+}
 
 .card-section h2 {
     color: white;
@@ -268,7 +293,27 @@ main {
 }
 
 
+/* HOVER */
 
+.elenco-playlist li:hover {
+    color: white;
+}
+
+.tasto-menu a:hover {
+    color: white;
+}
+
+.top a:hover {
+    font-size: 12px;
+}
+
+.nav-bar-items-list li:hover {
+    color: white;
+}
+
+
+
+/* FOOTER */
 
 footer {
     /* width: 100%; */
